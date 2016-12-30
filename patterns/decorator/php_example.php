@@ -74,7 +74,7 @@
         protected $name;
         protected $funnyTag;
 
-        public function __construct(ActionFigure $af)
+        private function __construct(ActionFigure $af)
         {
             $this->actionFigure = $af;
             $this->manufacturer = $this->actionFigure->getManufacturer();
