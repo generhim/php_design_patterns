@@ -63,8 +63,11 @@
 
     /** Wookie class
     *   This wookie uses the information from the ActionFigure class but does not change it.
+    *   Instead of extending off of the original class we are performing a dependency injection
+    *   of the original class: i.e. the constructor creates an instance of the original class
+    *   when a new instance of the Wookie class is instantiated.
     */
-    class Wookie
+    class WookieDecorator
     {
         protected $actionFigure;
         protected $manufacturer;
@@ -85,7 +88,6 @@
             $this->name = $newName . $this->funnyTag;
         }
     }
-
 
 php?&gt;
 </code>
