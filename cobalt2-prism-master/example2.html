@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cobalt2 for Prism.js</title>
+    <link rel="stylesheet" href="../css/cobalt2.prism.css">
+    <script src="../js/prism/prism.js"></script>
+</head>
+<body>
+
+<pre class="language-javascript">
+
+</pre>
+
+<pre class="language-php">
+&lt;?php
+
+    echo "hello world!";
+
+    class HelloWorld
+    {
+        private $property;
+
+        public function __construct()
+        {
+            $this->property = 123;
+        }
+
+        public function getProperty()
+        {
+            return $this->property;
+        }
+
+        public function setProperty($newValue)
+        {
+            $this->property = $newValue;
+        }
+    }
+
+    $myInstance = new HelloWorld();
+    echo $myInstance->getProperty();
+
+
+php?&gt;
+</pre>
+
+<pre class="language-css">
+<code>
+    /* Inline code */
+    :not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+    }
+
+    /* Language before */
+    .prism-show-language {
+    background:#1f4662;
+    border-top: 2px solid #ffc600;
+    text-align: right;
+    padding: 5px;
+    color:white;
+    font-size: 11px;
+    }
+    .prism-show-language + pre {
+    margin-top: 0;
+    }
+
+    h3.sample {
+    color:rgb(0,0,0);
+    }
+
+    a.special:hover {
+    text-decoration:underline;
+    }
+</code>
+</pre>
+
+<pre class="language-json">
+<code>
+    {
+    "name": "jquery",
+    "title": "jQuery",
+    "description": "JavaScript library for DOM operations",
+    "version": "2.2.4",
+    "main": "dist/jquery.js",
+    "homepage": "http://jquery.com",
+    "author": {
+    "name": "jQuery Foundation and other contributors",
+    "url": "https://github.com/jquery/jquery/blob/2.2.4/AUTHORS.txt"
+    },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jquery/jquery.git"
+    },
+    "keywords": [
+    "jquery",
+    "javascript",
+    "browser",
+    "library"
+    ]
+    }
+</code>
+</pre>
+
+</body>
+</html>
